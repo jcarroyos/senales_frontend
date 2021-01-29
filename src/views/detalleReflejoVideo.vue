@@ -55,7 +55,7 @@
                   <div class="grid-item">
                     <div class="contenedor-img galery">
                       <div class="mascara">
-                            <img v-bind:src="(this.images.length>0)?(urlservior+this.images[0].senale.imagen.url):'/'" class="img-fluid" />
+                            <img v-bind:src="(this.images.length>0)?(this.images[0].senale.imagen.url):'/'" class="img-fluid" />
                             <div class="imfoImagen">  
                                 <p>{{this.images[0]?this.images[0].senale.titulo:''}} </p>    
 

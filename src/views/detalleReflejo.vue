@@ -2,7 +2,7 @@
   <div class="Galerias" id="pagegaleria">  
      <full-page v-bind:options="options">
       <!--<div class="section fondodetalle"  v-bind:style="{backgroundImage: 'url('+'https://senales.herokuapp.com' + this.images[0].Multimedia.url + ')' }">-->
-      <div class="section fondodetalle"  v-bind:style="{backgroundImage: this.images.length>0? 'url('+urlservior+ this.images[0].Multimedia.url + ')' :''}">
+      <div class="section fondodetalle"  v-bind:style="{backgroundImage: this.images.length>0? 'url('+ this.images[0].Multimedia.url + ')' :''}">
         <div id="nav">
         <router-link to="/">Home</router-link>|
         <router-link to="/galeria">galeria</router-link>|
@@ -51,7 +51,7 @@
                   <div class="grid-item">
                     <div class="contenedor-img galery">
                       <div class="mascara">
-                            <img v-bind:src="(this.images.length>0)?(urlservior+this.images[0].senale.imagen.url):'/'" class="img-fluid" />
+                            <img v-bind:src="(this.images.length>0)?(this.images[0].senale.imagen.url):'/'" class="img-fluid" />
                             <div class="imfoImagen">  
                                 <p>{{this.images.length>0?this.images[0].senale.titulo:''}} </p>    
                                <a class="link" v-bind:href="+this.images.length>0?'/detalle-galeria?id='+this.images[0].senale.id:''">Ver Imagen</a>

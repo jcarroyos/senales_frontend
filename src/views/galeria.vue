@@ -70,7 +70,7 @@
           <div class="grid-item" v-for="posts in searchcategoria" :key="posts.id">
             <div class="contenedor-img galery">
               <div class="mascara">
-                <img v-bind:src=" (posts.imagen.url)?(urlservior+posts.imagen.url):'/'" class="img-fluid" />
+                <img v-bind:src=" (posts.imagen)?(posts.imagen.url):'/'" class="img-fluid" />
                 <div class="imfoImagen">
                   <h2>{{(posts.lista_category != null)?(posts.lista_category.nombre):''}}</h2>
                   <p>{{posts.titulo}}</p>

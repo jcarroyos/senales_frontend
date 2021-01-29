@@ -1,7 +1,7 @@
 <template>
     <div :v-for="dataInicio in dataInicio" :key="dataInicio.id">
         <div>     
-            <full-page v-bind:options="options"  id="fondoinicio" v-bind:style="{ backgroundImage:(dataInicio.ImageFondo)?('url('+urlservior + dataInicio.ImageFondo.url):''+')' }">
+            <full-page v-bind:options="options"  id="fondoinicio" v-bind:style="{ backgroundImage:(dataInicio.ImageFondo)?('url('+dataInicio.ImageFondo.url):''+')' }">
               <div class="section">
                 <div id="redeshome" class="container">
                     <ul id="social">

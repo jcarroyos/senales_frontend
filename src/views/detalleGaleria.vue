@@ -1,7 +1,7 @@
 <template>
   <div class="Galerias" id="pagegaleria">  
      <full-page v-bind:options="options">
-      <div  class="section fondodetalle"  v-bind:style="{backgroundImage: this.images.length>0? 'url('+urlservior+ this.images[0].imagen.url + ')' :''}">
+      <div  class="section fondodetalle"  v-bind:style="{backgroundImage: this.images.length>0? 'url('+ this.images[0].imagen.url + ')' :''}">
         <div id="nav">
         <router-link to="/">Home</router-link>|  
         <router-link to="/galeria">galeria</router-link>|
@@ -149,7 +149,7 @@
                       <div class="grid-item">
                         <div class="contenedor-img galery">
                           <div class="mascara">                                          
-                            <img v-bind:src=" (item.Multimedia)?(urlservior+item.Multimedia.url):'/'" class="img-fluid" />
+                            <img v-bind:src=" (item.Multimedia)?(item.Multimedia.url):'/'" class="img-fluid" />
                             <div class="imfoImagen">
                               <!-- <p>{{item.length>0?item.Nombre:''}}</p>-->
                               <p>{{item.Nombre?item.Nombre:''}}</p>                                

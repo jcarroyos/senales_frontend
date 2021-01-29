@@ -147,7 +147,7 @@
                   <div class="grid-item">
                     <div class="contenedor-img galery">
                       <div class="mascara">                                          
-                        <img v-bind:src=" (item.Multimedia)?(urlservior+item.Multimedia.url):'/'" class="img-fluid" />
+                        <img v-bind:src=" (item.Multimedia)?(item.Multimedia.url):'/'" class="img-fluid" />
                         <div class="imfoImagen">
                            <!-- <p>{{item.length>0?item.Nombre:''}}</p>-->
                          
