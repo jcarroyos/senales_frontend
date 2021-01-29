@@ -16,7 +16,7 @@
       >
         <h2 class="subtitulosld">{{category.tituloSeccion}}</h2>
         <p class="subtitulosld">{{category.descripcionSeccion}}</p>
-        <img v-bind:src="(category.seccionImagen)?(urlservior+ category.seccionImagen.url):'/'" class="img-fluid" />
+        <img v-bind:src="(category.seccionImagen)?(category.seccionImagen.url):'/'" class="img-fluid" />
       </section>
     </div>
     <div id="map"></div>
