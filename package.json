@@ -4,13 +4,13 @@
   "description": "Atlas de señales para la artista Marta Combariza",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "npm": "2.1.x"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service serve"
+    "start": "node server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -23,9 +23,11 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "mapbox-gl": "^1.12.0",
     "node-gyp": "^7.1.0",
+    "serve-static": "^1.14.1",
     "v-playback": "^1.0.2",
     "vee-validate": "^3.4.3",
     "vue": "^2.6.11",
