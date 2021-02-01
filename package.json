@@ -1,6 +1,7 @@
 {
-  "name": "frontsenales",
-  "version": "0.1.0",
+  "name": "Señales",
+  "version": "1.0.0",
+  "description": "Atlas de señales para la artista Marta Combariza",
   "private": true,
   "engines": {
     "node": "14.x"
