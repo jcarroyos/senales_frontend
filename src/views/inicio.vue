@@ -7,7 +7,7 @@
                     <ul id="social">
                         <li v-for="(rsoacial, index) in dataSocial" :key="index">
                           <a v-bind:href="rsoacial.url_redsocial"  target = "_blank" v-bind:title="rsoacial.red_social">  
-                              <img v-bind:src="urlservior+ rsoacial.img_social_red.url" class="img-fluid">                  
+                              <img v-bind:src="rsoacial.img_social_red.url" class="img-fluid">                  
                           </a>                  
                         </li>
                     </ul>
@@ -23,12 +23,12 @@
                               <div class="carousel-inner" v-for="(data, index) in dataSlider" :key="index" >
                                  <div class="" v-if="data.video != null">
                                    <div class="video">
-                                        <video  controls :src="urlservior+data.video.url"></video>                 
+                                        <video  controls :src="data.video.url"></video>                 
                                     </div>   
                                   </div> 
                                   
                                   <div class="" v-else>
-                                    <div class="imgfondo" v-bind:style="{ backgroundImage:(data.imagen)&&(data.imagen != null)?('url('+urlservior+ data.imagen.url):''+')' }">  
+                                    <div class="imgfondo" v-bind:style="{ backgroundImage:(data.imagen)&&(data.imagen != null)?('url('+data.imagen.url):''+')' }">  
                                       <h2 class="titulsliersld">{{data?data.titulo:''}}</h2>
                                       <h2 class="subtitulosld">{{data?data.subtitulo:''}}</h2>
                                       <p class="subtitulosld">{{data?data.descripccion:''}}</p>
