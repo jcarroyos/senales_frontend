@@ -1,7 +1,7 @@
 {
   "name": "senales",
   "version": "1.0.0",
-  "description": "Atlas de señales para la artista Marta Combariza",
+  "description": "Atlas de senales para la artista Marta Combariza",
   "private": true,
   "engines": {
     "npm": "2.1.x"
