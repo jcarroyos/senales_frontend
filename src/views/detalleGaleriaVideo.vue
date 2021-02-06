@@ -4,7 +4,7 @@
       
       <div  class="section fondodetalle">
       
-        <video-background  v-bind:src="((this.images.length>0)&&(this.images.Videosenal == undefined)&&(this.images[0].Videosenal!=null))?(urlservior+this.images[0].Videosenal.url):''"  style="max-height: 1000px; height: 100vh;">
+        <video-background  v-bind:src="((this.images.length>0)&&(this.images.Videosenal == undefined)&&(this.images[0].Videosenal!=null))?(this.images[0].Videosenal.url):''"  style="max-height: 1000px; height: 100vh;">
           
        </video-background>
        <div id="nav">
