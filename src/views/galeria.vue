@@ -55,7 +55,7 @@
               <div class="col-md-12">
                 <div class="contentformulario">
                   <input v-model="categoria" type="text" />
-                  <button type="submit" class="go-button" @click.prevent="searchcategoria">Search</button>
+                  <button type="submit" class="go-button" @click.prevent="searchcategoria">Buscar</button>
                 </div>
               </div>
             </div>
