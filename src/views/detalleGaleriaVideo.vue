@@ -51,16 +51,16 @@
                                             type="text"
                                             v-model="reflejo.Nombre"
                                             :state="errors[0] ? false : (valid ? true : null)"
-                                            placeholder="Nombre del Refeljo">
+                                            placeholder="Nombre del Reflejo">
                                           </b-form-input>
                                           <b-form-invalid-feedback>
-                                          El campo Nombre Refeljo es obligatorio 
+                                          El campo Nombre Reflejo es obligatorio 
                                           </b-form-invalid-feedback>
                                       </b-form-group>
                                     </ValidationProvider>
 
                                   <b-form-group id="descripcion" label="" label-for="input-2">
-                                      <b-form-textarea  id="descripcion"   placeholder="Descripcción del Refeljo" rows="3" max-rows="6" v-model="reflejo.Descripcion"></b-form-textarea>                                
+                                      <b-form-textarea  id="descripcion"   placeholder="Descripcción del Reflejo" rows="3" max-rows="6" v-model="reflejo.Descripcion"></b-form-textarea>                                
                                   </b-form-group> 
 
                                   <ValidationProvider rules="required" name="lugar">
@@ -69,10 +69,10 @@
                                         type="text"
                                         v-model="lugar.Nombre"
                                         :state="errors[0] ? false : (valid ? true : null)"
-                                        placeholder="Lugar del Refeljo">
+                                        placeholder="Lugar del Reflejo">
                                       </b-form-input>
                                       <b-form-invalid-feedback>
-                                      El campo Lugar del Refeljo es obligatorio 
+                                      El campo Lugar del Reflejo es obligatorio 
                                       </b-form-invalid-feedback>
                                   </b-form-group>
                                 </ValidationProvider>
@@ -87,7 +87,7 @@
                                 </b-form-group>
                               
 
-                              <ValidationProvider rules="required" name="Imagen Refeljo">
+                              <ValidationProvider rules="required" name="Imagen Reflejo">
                             <b-form-group slot-scope="{ valid, errors }" label="">
                                 <b-form-file
                                   type="file"
@@ -95,25 +95,25 @@
                                   ref="Imagen"
                                   :state="errors[0] ? false : (valid ? true : null)"
                                   @change="onInput1"
-                                  placeholder="Imagen del Refeljo">
+                                  placeholder="Imagen del Reflejo">
                                 </b-form-file>
                                 <b-form-invalid-feedback>
-                                 El campo Imagen del Refeljo es obligatorio 
+                                 El campo Imagen del Reflejo es obligatorio 
                                 </b-form-invalid-feedback>
                             </b-form-group>
                           </ValidationProvider>
 
-                         <ValidationProvider  name="Video Refeljo">
+                         <ValidationProvider  name="Video Reflejo">
                             <b-form-group  label="">
                                 <b-form-file
                                   type="file"
                                   v-model="reflejo.VideoReflejo"
                                   ref="Video"
                                   @change="onInput2"
-                                  placeholder="Video del Refeljo">
+                                  placeholder="Video del Reflejo">
                                 </b-form-file>
                                 <b-form-invalid-feedback>
-                                 El campo Imagen del Refeljo es obligatorio 
+                                 El campo Imagen del Reflejo es obligatorio 
                                 </b-form-invalid-feedback>
                             </b-form-group>
                           </ValidationProvider>
