@@ -42,5 +42,10 @@ Vue.config.productionTip = false
 
 new Vue({
     router,
+    data: {
+        options: {
+          licenseKey: '3E3837AD-D11241BB-BB398B8E-3A4D26B4'
+        },
+    },
     render: h => h(App)
 }).$mount('#app')
