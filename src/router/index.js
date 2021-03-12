@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import inicio from '../views/inicio.vue'
 import galeria from '../views/galeria.vue'
+import texto from '../views/textoReflexivo.vue'
 import detalleGaleria from '../views/detalleGaleria.vue'
 import detalleGaleriaVideo from '../views/detalleGaleriaVideo.vue'
 import detalleReflejo from '../views/detalleReflejo.vue'
@@ -46,6 +47,12 @@ const routes = [{
         path: '/mapa',
         name: 'mapa',
         component: mapa
+    },
+
+    {
+        path: '/texto-reflexivo',
+        name: 'texto',
+        component: texto
     }
 
 ]

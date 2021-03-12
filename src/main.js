@@ -18,6 +18,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
 import { ValidationObserver, ValidationProvider, extend } from 'vee-validate';
 import * as rules from 'vee-validate/dist/rules';
 
+import Highlight from 'vue-markdown-highlight'
+Vue.use(Highlight)
+
 // install rules
 Object.keys(rules).forEach(rule => {
     extend(rule, rules[rule]);
