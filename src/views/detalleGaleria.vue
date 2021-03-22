@@ -36,7 +36,7 @@
             
                <div>
                      <div>
-                        <b-button v-b-modal.modal-1>Colaborar</b-button>
+                        <b-button v-b-modal.modal-1>Participar</b-button>
                                                                                                       
                         <b-modal id="modal-1" ref="my-modal" v-bind:title="this.images.length>0?this.images[0].titulo:''">
                             

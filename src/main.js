@@ -18,6 +18,9 @@ import VideoBackground from 'vue-responsive-video-background-player'
 import { ValidationObserver, ValidationProvider, extend } from 'vee-validate';
 import * as rules from 'vee-validate/dist/rules';
 
+import Highlight from 'vue-markdown-highlight'
+Vue.use(Highlight)
+
 // install rules
 Object.keys(rules).forEach(rule => {
     extend(rule, rules[rule]);
@@ -42,5 +45,10 @@ Vue.config.productionTip = false
 
 new Vue({
     router,
+    data: {
+        options: {
+          licenseKey: '3E3837AD-D11241BB-BB398B8E-3A4D26B4'
+        },
+    },
     render: h => h(App)
 }).$mount('#app')

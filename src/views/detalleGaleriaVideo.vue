@@ -40,7 +40,7 @@
                 <p class="parrafo"><strong><label class="detallecategoria">Categoria:</label> </strong>{{this.images.length>0?this.images[0].lista_category.nombre:''}}</p>
                 <div>
                      <div>
-                        <b-button v-b-modal.modal-1>Colaboarar</b-button>
+                        <b-button v-b-modal.modal-1>Participar</b-button>
                                                                                                       
                         <b-modal id="modal-1" ref="my-modal" v-bind:title="this.images.length>0?this.images[0].titulo:''">
                             <ValidationObserver ref="observer">

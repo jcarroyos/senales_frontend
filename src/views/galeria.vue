@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/galeria">galeria</router-link>|
-      <router-link to="/mapa">Mapa</router-link>
+      <router-link to="/mapa">Mapa</router-link>|
+      <router-link to="/texto-reflexivo">Texto reflexivo</router-link>
     </div>
     <router-view />
 
@@ -55,7 +56,7 @@
               <div class="col-md-12">
                 <div class="contentformulario">
                   <input v-model="categoria" type="text" />
-                  <button type="submit" class="go-button" @click.prevent="searchcategoria">Search</button>
+                  <button type="submit" class="go-button" @click.prevent="searchcategoria">Buscar</button>
                 </div>
               </div>
             </div>
