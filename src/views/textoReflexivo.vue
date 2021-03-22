@@ -11,7 +11,7 @@
                <div class="container category" id="">
                 <div  class="row">           
                    <div class="col-xs-12 col-sm-8 col-md-8 html">    
-                        <h2 class="titulosec">{{dataSeccion.titulo}}</h2>
+                        <h1 class="titulo-txt">{{dataSeccion.titulo}}</h1>
                         <div v-html="dataSeccion.cuerpo"></div>
                     </div>     
                 </div>
@@ -77,6 +77,9 @@ export default {
 <style lang="less">
 .html{
     text-align: left;
+}
+.titulo-txt{
+  margin: 90px 0 60px 0;
 }
 @media (min-width: 768px) and (max-width: 991px){
     #fondoinicio div#slierscontent h2.titulsliersld {    
