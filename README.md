@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Copyright
+
+All user content in this repository are copyrighted © by Marta Combariza Osorio who commissioned this project.
